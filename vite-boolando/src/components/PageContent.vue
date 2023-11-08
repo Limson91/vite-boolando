@@ -37,7 +37,7 @@ export default {
 <template>
     <div class="card">
         <figure>
-            <img :src="card.frontImage" alt="" class="card_img" />
+            <img :src="card.frontImage" alt="" class="card-img" />
             <img :src="card.backImage" alt="" class="card-img-hover" />
 
             <div class="tags">
@@ -48,7 +48,7 @@ export default {
         </figure>
 
         <div class="brand" @click="returnDiscount()">{{ card.brand }}</div>
-        <div class="item">{{ card.name.toUpperCase }}</div>
+        <div class="item">{{ card.name.toUpperCase() }}</div>
 
         <div class="price-container">
             <div class="discount-price">{{ returnDiscount() }} &euro;</div>
@@ -82,16 +82,17 @@ export default {
 
         * {
             line-height: 24px;
-            padding: 0 10px;
         }
 
         .discount {
             background-color: $discount-color;
             order: -1;
+            padding: 0 10px;
         }
 
         .tag {
             background-color: $tag-color;
+            padding: 0 10px;
         }
     }
 
@@ -110,7 +111,7 @@ export default {
     display: flex;
     gap: 10px;
 
-    .discounted-price {
+    .discount-price {
         color: red;
         font-weight: 600;
     }
@@ -134,6 +135,7 @@ export default {
     display: flex;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
     font-size: 25px;
 }
 

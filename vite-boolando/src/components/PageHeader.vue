@@ -2,27 +2,30 @@
 export default {
     data() {
         return {
-            title: 'Boolando',
+            categories: ['Donna', 'Uomo', 'Bambino']
         }
     }
 }
 </script>
 
 <template>
-    <header class="page-header">
-        <nav class="container">
-            <div class="row">
-                <div class="col">
-                    Donna Uomo Bambino
-                </div>
-                <div class="col">
-                    <img src="./img/boolean-logo.png" alt="" height="30">
-                </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-1">
+                <ul class="categories-list">
+                    <li v-for="section in categories">
+                        <a href="#">{{ section }}</a>
+                    </li>
+                </ul>
             </div>
-        </nav>
-    </header>
+        </div>
+    </div>
 </template>
 
-<style>
+<style lang="scss">
 /* CSS va qui! */
+.categories-list {
+    display: flex;
+    gap: 15px;
+}
 </style>

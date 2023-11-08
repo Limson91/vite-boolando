@@ -33,7 +33,7 @@ export default {
 </template>
 
 <style scoped lang="scss">
-@use '../style/partials/_variables.scss' as *;
+@use '../style/partials/variables' as *;
 
 .list {
     display: flex;
@@ -63,5 +63,7 @@ export default {
     background-color: $header-color;
     width: 100vw;
     line-height: 75px;
+    padding: 0px 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 </style>

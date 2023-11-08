@@ -46,7 +46,6 @@ export default {
     height: 80px;
     background-color: $footer-color;
     color: white;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 15px;
 
     .info-container {

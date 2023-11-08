@@ -64,6 +64,5 @@ export default {
     width: 100vw;
     line-height: 75px;
     padding: 0px 20px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 </style>

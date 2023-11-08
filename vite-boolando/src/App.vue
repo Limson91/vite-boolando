@@ -14,7 +14,7 @@ export default {
 
   data() {
     return {
-      cards: productsJSON
+      cards: productsJSON.products
     }
   }
 }
@@ -24,7 +24,7 @@ export default {
   <PageHeader />
   <div class="container">
     <div class="row justify beetween cards-container">
-      <div class="col-4" v-for="card in cards.products">
+      <div class="col-4" v-for="card in cards">
         <PageContent :card="card" />
       </div>
     </div>

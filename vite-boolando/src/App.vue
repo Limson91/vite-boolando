@@ -1,24 +1,21 @@
 <script>
 import PageHeader from './components/PageHeader.vue';
+import PageContent from '.components/PageContent.vue';
+import PageFooter from '.components/PageFooter.vue';
 
 export default {
   components: {
-    PageHeader
+    PageHeader,
+    PageContent,
+    PageFooter
   }
 }
 </script>
 
 <template>
   <PageHeader />
-  <!-- <div>
-    <a href="https://vitejs.dev" target="_blank">
-      <img src="/vite.svg" class="logo" alt="Vite logo" />
-    </a>
-    <a href="https://vuejs.org/" target="_blank">
-      <img src="./assets/vue.svg" class="logo vue" alt="Vue logo" />
-    </a>
-  </div>
-  <HelloWorld msg="Vite + Vue" /> -->
+  <PageContent />
+  <PageFooter />
 </template>
 
 <style lang="scss">

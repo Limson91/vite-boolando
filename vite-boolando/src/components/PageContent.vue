@@ -85,6 +85,8 @@ export default {
                             <div class="discount" v-show="card.discount != ''">-{{ card.discount }}%</div>
                             <div class="tag" v-show="card.tag != ''">{{ card.tag }}</div>
                         </div>
+
+                        <div class="heart">&hearts;</div>
                     </figure>
 
                     <div class="brand">{{ card.brand }}</div>
@@ -105,6 +107,32 @@ export default {
 
 .container {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.row {
+    padding: 50px 0;
+    row-gap: 50px;
+}
+
+.heart {
+    position: absolute;
+    right: 0;
+    top: 15px;
+    background-color: white;
+    aspect-ratio: 1;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+
+    &:hover {
+        color: red;
+    }
+}
+
+.heart-red {
+    color: red;
 }
 
 .card {
@@ -130,15 +158,16 @@ export default {
 
         * {
             line-height: 24px;
-            padding: 0 10px;
         }
 
         .discount {
             background-color: $discount-color;
+            padding: 0 10px;
         }
 
         .tag {
             background-color: $tag-color;
+            padding: 0 10px;
         }
     }
 
@@ -159,6 +188,7 @@ export default {
 
     .discounted-price {
         color: red;
+        padding: 10px;
     }
 
     .price {
